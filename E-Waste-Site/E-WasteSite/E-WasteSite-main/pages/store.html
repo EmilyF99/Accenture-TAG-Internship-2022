@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--Code for Online Store Page. 
+    Credited to Emily F, Telisa DP
+    Accenture Internship, Code First Girls 2022-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../images/favicon-32x32.png">
+    <link rel = "stylesheet" href = "../style/default.css">
+    <link rel = "stylesheet" media="screen and (min-width: 719px)" href = "..\style\style.css">
+    <link rel = "stylesheet" media="screen and (max-width: 720px)" href = "..\style\mobile.css">
+   
+    <title>Online Store</title>
+</head>
+<body class="pageLayout">
+    <!--Nav Bar-->
+    <script id="replace_with_navbar" src="../JS/nav.js"></script>
+    <!--Body-->
+    <div class="spacer"></div>
+    <div id = "storeSearch" class="formInputGroup">
+    <form>
+        <label for = "productSearch">Product Search</label>
+        <input type = "text" id = "productSearch" name = "productSearch" autofocus placeholder="Search...">
+        <input type = "submit" id = "searchSubmit" name = "Submit" value = "Submit">
+    </form>
+    </div>
+    <div  id="productGallery" class="productGallery">
+
+        <div id = "product" class="productCard">
+            <h2 class="formTitle">Product Title</h2>
+            <img src = "../images/Lightbulbs.jpg" alt = "product image" height = "250px" width = "250px">
+            <p id = "productDescription" class="formText" >Product Description</p>
+            <p id = "price" class="formText">Price</p>
+            <button class="normalButton">Add to Cart</button>
+        </div>
+        <div id = "product" class="productCard">
+            <h2 class="formTitle">Product Title</h2>
+            <img src = "../images/Lightbulbs.jpg" alt = "product image" height = "250px" width = "250px">
+            <p id = "productDescription" class="formText" >Product Description</p>
+            <p id = "price" class="formText">Price</p>
+            <button class="normalButton">Add to Cart</button>
+        </div>
+        <div id = "product" class="productCard">
+            <h2 class="formTitle">Product Title</h2>
+            <img src = "../images/Lightbulbs.jpg" alt = "product image" height = "250px" width = "250px">
+            <p id = "productDescription" class="formText" >Product Description</p>
+            <p id = "price" class="formText">Price</p>
+            <button class="normalButton">Add to Cart</button>
+        </div>
+        <div id = "product" class="productCard">
+            <h2 class="formTitle">Product Title</h2>
+            <img src = "../images/Lightbulbs.jpg" alt = "product image" height = "250px" width = "250px">
+            <p id = "productDescription" class="formText" >Product Description</p>
+            <p id = "price" class="formText">Price</p>
+            <button class="normalButton">Add to Cart</button>
+        </div>
+        
+        <!-- <script type="module" src="../JS/productCard.js" id="productContainer"></script> -->
+    </div>
+    <!--Page Footer-->
+    <script id="replace_with_footer" src="../JS/footer.js"></script>
+    
+</body>
+</html>

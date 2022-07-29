@@ -1,0 +1,301 @@
+/*Used for styles that are applied to both mobile and desktop */
+
+/*Removing default contraints */
+* { margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif; }
+
+/*Variable setup*/
+:root{
+    --primary-color: black;
+    --secondary-color: white;
+    --accent-color: rgb(16, 91, 16);
+    --inactive-color: grey;
+    --border-color: rgb(98, 175, 107);
+    --error-color: red;
+    --success-color: green;
+    --link-color: blue;
+    --shadow-color: rgba(0,0,0,0.5);
+    --hover-color: yellow ;
+    --nav-color: #2E4057;
+    --image-shadow: 2px 2px 10px black;
+}
+
+/*Navigation Bar Styling --> Emily F */
+ #navBar{
+    top: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    display: grid;
+    grid-template-areas: "logo elements";
+    grid-template-columns: 20% 80%;
+ }
+.navigationElements li{list-style-type: none; display:inline-block; padding: 0.8em; vertical-align: -60px;}
+.navigationElements a:hover{color: var(--hover-color);}
+.navigationElements a{text-decoration: none; color: white;}
+#nameAndLogo p {font-weight: bold; display: inline-block;padding: 0 1em; border-right: 5px solid white; vertical-align: 50px; color: white}
+#companyLogo{height: 75px; width: 75px;vertical-align: 25px; padding-left: 0.5em; padding-top: 1.4em;}
+#nameAndLogo {grid-area:logo; background-color:var(--nav-color)}
+#navigationElements{grid-area:elements; height: 100%;text-align: left;background-color: var(--nav-color)}
+
+
+/*Footer Styling --> Emily F */
+footer { background-color: var(--nav-color); color: white; padding: 1em; line-height: 1.5;}
+footer li {list-style-type: none;}
+footer li:hover {color:var(--hover-color);}
+
+/*Index Page Styling --> Emily F*/
+#goals h2{width:100%; padding-top: 2em;}
+#goalContainer{width: 100%; display: flex; justify-content: space-evenly;align-items: center;}
+.goal {display: inline-block;align-items: center;text-align: center;padding-top: 3em;padding-bottom: 5em;margin-left: 10%;}
+
+#whoWeAre {background-color: #68E46A;}
+#whoWeAre h2 {padding-top: 2em;padding-bottom: 2em;}
+#whoWeAreContainer{display: flex;text-align: center;justify-content: center;}
+#whoWeAreContainer p {padding-top: 2em;padding-bottom: 2em;padding-right: 4em;width: 20%;float: left;}
+#ManOnTVImg {height: 300px;margin-bottom: 2em;float:right;box-shadow: var(--image-shadow);}
+
+/*Services Page* --> Emily F and Hui*/
+#ourServices h2{padding-left: 3em;text-align: left; padding-top: 1em;}
+#ourServices p {padding-left: 3em; padding-top: 2em; width: 45%;}
+#otherServicesContainer {display: flex;justify-content: center; padding-top: 4em;}
+
+.otherServices {padding: 2em;text-align: center; width: 100%;background-color: #68E46A;box-shadow: var(--shadow-color);}
+.otherServices img {box-shadow: var(--image-shadow);}
+.otherServices p a{ text-decoration: none;}
+
+/*Learn More Page --> Emily F*/
+#learnTitle {text-align: left;padding-left: 3em;padding-top: 2em;}
+#learnContainer{display: flex;justify-content: center;padding-top: 4ems;}
+.learn {padding: 4em;width: 25%;}
+
+#interactiveExp{background-color: #68E46A;}
+#gameContainer{background-color: #68E46A;display: flex;justify-content: center;}
+#game {background-color: white;width: 75%;height: 400px;margin-bottom: 2em;margin-top: 2em;}
+
+/*Location Page --> Emily F and Tolu */
+#locationPageContainer {display: flex; padding-top: 2em;}
+#locationDetails{width: 100%;height: 400px; background-color: #f2f2f2; margin-bottom: 2em;}
+#locationsDetailAndSearchContainer{width:35%;padding-left: 5%;}
+
+.bgimg {
+    background-image: url("https://as1.ftcdn.net/v2/jpg/00/85/98/08/1000_F_85980822_VWs5yqRr1TOwfm5gk9qPQBgB191DcUFy.jpg");
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat, no-repeat;
+    background-position: center, center;
+    position:relative;
+    background-size: contain;
+  }
+.mapContainer {height: 500px;width: 500px; padding-left:4em;}
+.point{height: 15px;width: 15px;background-color: #bbb;border-radius: 50%;}
+.point-container{position: absolute;}
+.point-container.first{top: 50%;left: 58%;}
+.point-container.second{top: 55%;left: 65%;}
+.point-container.third{top: 60%;left: 72%;}
+.point-container.fourth{top: 68%;left: 58%;}
+.point-container.fifth{top: 70%;left: 73%;}
+.first-div, .second-div, .third-div, .fourth-div, .fifth-div {display: none;}
+.point.first:hover + .first-div, .point.second:hover + .second-div, .point.third:hover + .third-div, .point.fourth:hover + .fourth-div, .point.fifth:hover + .fifth-div{display: block;}
+.hover {background-color:gray;z-index:99;position:absolute;width: 150px;}
+.hover > span {display:block;}
+.hover > span:first-child{margin-bottom: 5px;}
+.hover > span:last-child{margin-bottom:15px;}
+.LocationSub {text-align: center;}
+
+/*store styling --> Telisa DP --> START*/
+
+.productCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    box-shadow: 0 0 40px var(--shadow-color);
+    border-radius: 5px;
+    padding: 2rem;
+    max-width: 20%;
+    transition: background 0.2s, border-color 0.2s;
+    margin-bottom: 2rem;
+    background-color: var(--secondary-color);
+}
+
+.productCard:hover{transform: scale(1.05);cursor: pointer;}
+
+.productGallery{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    padding: 2rem;
+    background-color: var(--shadow-color);
+}
+
+.normalButton{
+   
+    padding: 1rem 2rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    background: var(--accent-color);
+}
+
+.normalButton:hover{
+    background-color: var(--border-color);
+}
+
+.normalButton:active{
+    transform: scale(0.98);
+}
+
+/*store styling --> Telisa DP --> END*/
+
+/*contact form styling --> Telisa DP --> START*/
+.contactContainer{
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    background-size: cover; 
+}
+
+.contactFormElement{
+    width: 70%;
+    max-width: 70%;
+    margin: 1rem;
+    padding: 2rem;
+    box-shadow: 0 0 40px var(--shadow-color);
+    background: whitesmoke;
+    color: black;
+    border-radius: 5px;
+}
+
+.mandatoryField{
+    color: var(--error-color);
+}
+/*contact form styling --> Telisa DP --> END*/
+
+/*Login and signup form styling --> Telisa DP --> START*/
+.loginContainer{
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    background-size: cover;
+    background-color: black;
+    
+}
+
+.loginFormElement{
+    width: 400px;
+    max-width: 400px;
+    margin: 1rem;
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 0 40px var(--shadow-color);
+    background: whitesmoke;
+    color: black;
+}
+
+.formInputGroup{
+margin-bottom: 1rem;
+
+}
+
+.form > *:last-child{
+    margin-top: 0;
+}
+.form > *:first-child{
+    margin-top: 0;
+}
+
+.formInput{
+display: block;
+width: 100%;
+padding: 0.75rem;
+box-sizing: border-box;
+border-radius: 5px;
+border: 1px solid var(--border-color);;
+outline: none;
+background: rgb(199, 199, 199);
+transition: background 0.2s, border-color 0.2s;
+}
+
+.formInput:focus{
+   background: white;
+}
+.formMessage{
+
+text-align: center;
+margin-bottom: 1rem;
+
+}
+.formMessage--success {
+    color: var(--success-color);
+}
+.formMessage--error{
+    color: var(--error-color)
+}
+
+.formInput--error{
+color: var(--error-color);
+border-color: var(--error-color);
+}
+
+
+.formButton{
+    width: 100%;
+    padding: 1rem 2rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    background: var(--accent-color);
+}
+
+.formButton:hover{
+    background-color: var(--border-color);
+}
+
+.formButton:active{
+    transform: scale(0.98);
+}
+.formTitle{
+    text-align: center;
+    color: var(--primary-color);
+}
+.formText{
+    text-align: center;
+}
+.formLink{
+    text-decoration: none;
+    cursor: pointer;
+    color:var(--link-color);;
+}
+
+.formLink:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.form--hidden{
+    display:none;
+}
+/*Login and signup form styling --> Telisa DP --> END*/
+
+.pageLayout{
+    display: flex;
+    margin: 0;
+    flex-direction: column;
+}
